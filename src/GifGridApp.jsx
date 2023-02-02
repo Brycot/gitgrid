@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GridContainer } from "./components/GridContainer";
+import { AddCategory, GridContainer } from "./components";
 
 export const GifGridApp = () => {
     const [categories, setCategories] = useState(['Valorant']);
