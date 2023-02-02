@@ -3,7 +3,7 @@ import { AddCategory } from "./components/AddCategory";
 import { GridContainer } from "./components/GridContainer";
 
 export const GifGridApp = () => {
-    const [categories, setCategories] = useState(['valorant']);
+    const [categories, setCategories] = useState(['Valorant']);
 
     const onAddCategory = (newCategory) => {
         if (categories.includes(newCategory)) return;
