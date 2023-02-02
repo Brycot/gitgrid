@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import { GifGridApp } from "./GifGridApp";
 
-import './GifGridApp';
+import './styles.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
