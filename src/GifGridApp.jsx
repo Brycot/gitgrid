@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AddCategory, GridContainer } from "./components";
 
 export const GifGridApp = () => {
-    const [categories, setCategories] = useState(['Valorant']);
+    const [categories, setCategories] = useState(["Valorant"]);
 
     const onAddCategory = (newCategory) => {
         if (categories.includes(newCategory)) return;
@@ -11,11 +11,9 @@ export const GifGridApp = () => {
     };
     return (
         <>
-            <h1>GifGrid</h1>
+            <h1>Gif/Grid</h1>
 
             <AddCategory onNewCategory={(event) => onAddCategory(event)} />
-
-            <button onClick={onAddCategory}>Agregar</button>
 
             {categories.map((category) => (
                 <GridContainer key={category} category={category} />
